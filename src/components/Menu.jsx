@@ -7,15 +7,17 @@ function Menu({ play }) {
 
     let char = 0;
     let timer = setInterval(onTick, 50);
+    let secondTimer;
 
     function onTick() {
       const span = spans[char];
       span.classList.remove('hidden');
       if (char === 41) {
         clearInterval(timer);
+        timer = null;
         setTimeout(() => {
           char++;
-          setInterval(onTick, 50);
+          secondTimer = setInterval(onTick, 50);
         }, 1000);
       } else char++;
       //stops the function from running once the end of the string has been reached
@@ -24,14 +26,15 @@ function Menu({ play }) {
         return;
       }
     }
+
     function complete() {
       setTimeout(() => {
         document
           .getElementById('play--btn')
           .classList.remove('hidden');
       }, 300);
-      clearInterval(timer);
-      timer = null;
+      clearInterval(secondTimer);
+      secondTimer = null;
     }
   });
 
