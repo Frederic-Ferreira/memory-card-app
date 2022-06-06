@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { randomItemsPosition } from '../helpers';
+import shakeArray from 'shake-array';
 import uniqid from 'uniqid';
 import Card from './Card';
 
@@ -86,7 +86,7 @@ function Cardboard(props) {
   const [update, setUpdate] = useState(false);
 
   useEffect(() => {
-    const newState = randomItemsPosition(cards, cards.length);
+    const newState = shakeArray(cards);
 
     setCards(newState);
   }, [update]);
