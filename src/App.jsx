@@ -4,7 +4,7 @@ import Winning from './components/Winning';
 import Cardboard from './components/Carboard';
 
 function App() {
-  const [score, setScore] = useState({ current: 10, best: 0 });
+  const [score, setScore] = useState({ current: 0, best: 0 });
   const [showMenu, setShowMenu] = useState(true);
   const [winner, setWinner] = useState(false);
 
