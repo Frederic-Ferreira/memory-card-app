@@ -445,6 +445,9 @@ header {
   .card {
     height: 90px;
     width: 90px;
+    border-top: 1rem solid $header-color;
+    border-left: 1rem solid $header-color;
+    border-right: 1rem solid $header-color;
     p {
       margin-top: 0.25rem;
     }
