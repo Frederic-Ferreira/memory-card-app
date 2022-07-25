@@ -31,7 +31,7 @@ html {
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -416,7 +416,7 @@ header {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   #menu-container {
     width: 70%;
   }
@@ -443,8 +443,8 @@ header {
     }
   }
   .card {
-    height: 90px;
-    width: 90px;
+    // height: 90px;
+    // width: 90px;
     border-top: 1rem solid $header-color;
     border-left: 1rem solid $header-color;
     border-right: 1rem solid $header-color;
@@ -454,7 +454,7 @@ header {
   }
   header {
     h2 {
-      font-size: 0.33rem;
+      font-size: 0.55rem;
     }
     h3 {
       font-size: 0.75rem;
