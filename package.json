@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "shake-array": "^1.0.1",
+    "shake-array": "^2.0.0",
     "uniqid": "^5.4.0"
   },
   "devDependencies": {
